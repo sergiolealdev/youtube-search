@@ -12,6 +12,7 @@ import {SearchResult} from '../search-result';
 import {YoutubeServiceService} from '../youtube-service.service';
 
 @Component({
+  outputs: ['loading', 'results'],
   selector: 'app-search-box',
   templateUrl: './search-box.component.html',
   styleUrls: ['./search-box.component.css']
@@ -26,6 +27,7 @@ export class SearchBoxComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log("on init");
     // convert the `keyup` event into an observable stream
     Observable.fromEvent(this.el.nativeElement, 'keyup')
       .map((e: any) => e.target.value) // extract the value of the input
