@@ -13,4 +13,5 @@ export class SearchResult {
     this.videoUrl        = obj && obj.videoUrl       ||
                            `https://www.youtube.com/watch?v=${this.id}`;
   }
+  
 }
