@@ -27,8 +27,7 @@ export class SearchBoxComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("on init");
-    // convert the `keyup` event into an observable stream
+   // convert the `keyup` event into an observable stream
     Observable.fromEvent(this.el.nativeElement, 'keyup')
       .map((e: any) => e.target.value) // extract the value of the input
       .filter((text: string) => text.length > 1) // filter out if empty

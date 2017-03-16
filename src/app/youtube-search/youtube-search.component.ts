@@ -8,7 +8,7 @@ import {SearchResultComponent} from '../search-result/search-result.component';
 })
 export class YoutubeSearchComponent implements OnInit {
 
-  results: SearchResultComponent[];;
+  results: SearchResultComponent[];
 
   constructor() { }
 
