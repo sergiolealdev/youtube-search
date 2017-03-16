@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {SearchResult} from '../search-result';
 
 @Component({
@@ -8,7 +8,7 @@ import {SearchResult} from '../search-result';
 })
 export class SearchResultComponent implements OnInit {
 
-  result: SearchResult;
+  @Input result: SearchResult;
 
   constructor() { }
 

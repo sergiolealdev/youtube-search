@@ -10,17 +10,17 @@
 
   <div class="row">
     <div class="input-group input-group-lg col-md-12">
-      <search-box
+      <app-search-box
         (loading)="loading = $event"
         (results)="updateResults($event)"
-      ></search-box>
+      ></app-search-box>
     </div>
   </div>
 
   <div class="row">
-    <search-result
+    <app-search-result
       *ngFor="let result of results"
       [result]="result">
-    </search-result>
+    </app-search-result>
   </div>
 </div>
