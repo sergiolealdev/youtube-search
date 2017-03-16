@@ -8,7 +8,7 @@ import {SearchResult} from '../search-result';
 })
 export class SearchResultComponent implements OnInit {
 
-  @Input result: SearchResult;
+  @Input() result: SearchResult;
 
   constructor() { }
 
