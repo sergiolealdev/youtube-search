@@ -15,8 +15,6 @@ export class YoutubeSearchComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
   updateResults(results: SearchResultComponent[]): void {
     this.results = results;
     console.log("results:", this.results); // uncomment to take a look
